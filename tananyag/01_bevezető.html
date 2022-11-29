@@ -1,0 +1,172 @@
+
+<!--Komment a HTML leíró nyelvben-->
+
+<!--
+    
+1. Mi az a HTML dokumentum?
+A HTML dokumentum egy standard szövegfájl .html vagy .htm kiterjesztéssel, mely speciális formázó 
+utasításokat tartalmaz.
+Legegyszerûbben a Notepad (Jegyzettömb) nevû programmal hozhatjuk létre, szerkeszthetjük és 
+menthetjük el, de célszerű valamilyen
+speciális szerkesztőt használni (Visual Studio Code stb).
+Megjelenítésére valamelyik böngészőt használjuk.
+-->
+ 
+<!--
+2.Mi az a „TAG”?
+A „TAG” (ejtsd: "teg", továbbiakban egyszerûen tag-nek írjuk) a HTML dokumentumok formázó utasítása. 
+Minden esetben a „kisebb” és „nagyobb” jelek közé kell tenni: 
+<AZONOSITO>
+Minden tag-nek van nyitó és záró része. A  záró részbe az azonosító elé egy „ / ” jelet kell tenni:
+</AZONOSITO>
+
+A tag nyitó részébe az azonosító után megadhatunk ún. paramétereket is. Ezek a paraméterek a tag-re 
+vonatkozó tulajdonságokat állítják be. A paraméter neve és az egyenlőségjel után a paraméter 
+értékét dupla idézőjelek közé kell tenni. A paramétereket egy szóközzel választjuk el egymástól:
+<AZONOSITO paraméter=”érték” paraméter=”érték”>
+
+A tag nyitó és záró része közé kerül az a rész, amelyre a tag vonatkozik. Ha például egy 
+szöveget kék színnel és 5-ös betûnagysággal szeretnénk kiírni:
+<BETŰ szín=”kék” betűnagyság=”5”> Szöveget ide... </BETŰ>
+-->
+
+
+ 
+<!--
+A HTML dokumentumok alapszerkezete
+
+Minden HTML oldal a következõképpen épül fel:
+
+<HTML>
+
+     <HEAD>
+
+         <TITLE> [.......] </TITLE>
+
+     </HEAD>
+
+     <BODY>
+
+         [............]
+
+         [............]
+
+         [............]
+
+     </BODY>
+
+</HTML>
+
+Jól látható, hogy minden nyitó tag-nek megvan a záró párja, és hogy mindig azt a tag-et zárjuk le először, 
+amelyiket utoljára megnyitottuk. A HTML oldalak mind ilyen keretes szerkezetűek! Néhány tag esetében
+ a záró tag-et elhagyhatjuk, de erre majd mindig külön felhívjuk a figyelmet!
+
+ Most vegyük sorra ezt a 4 alapvető tag-et:
+<HTML> : azt jelzi, hogy a közte lévő szöveget a HTML szabvány szerint kell értelmeznie a böngészőnek. 
+Ennek a tag-nek nincsenek paraméterei, és mindig kötelező lezárni.
+
+<HEAD> :ez a HTML oldal fej-része. Sok hasznos információt elhelyezhetünk benne.
+
+<TITLE> :A HTML oldal címe, vagy ha úgy tetszik fejléce, 
+ ami a böngésző fejlécében jelenik meg. Paraméterei nincsenek, és mindig kötelező lezárni!
+
+<BODY : a HTML oldal törzse. A nyitó és záró tag közé beírt szöveget a böngésző megpróbálja értelmezni, 
+majd megjeleníteni. Mindig le kell zárni. Ide jön a weboldal elkészítéséhez használandó kód.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bevezető, címkék használata</title>
+</head>
+<body>
+
+    Hello World!
+    <br>
+
+
+    <!-- Ez egy komment vagy megjegyzés: akkor használjuk, ha valamit nem szeretnénk, hogy megjelenjen a weboldalon -->
+Szegedi SZC Tóth János Szakképző és Garabonciás Kollégium
+<br>    <!--br = sortörés -->
+Mórahalom
+
+<!-- p = új bekezdés
+A bekezdés mindig új sorban kezdődik, és általában egy szövegblokk.
+-->
+<p>Ez egy bekezdés</p>
+
+<hr>        <!-- hr = vízszintes vonalat húz -->
+
+<!-- hx = címsort határoz meg. 
+    x = 1,2,3,4,5,6.
+h1 = legnagyobb betű méret
+h6= legkisebb betű méret 
+-->
+<h1>Programozás alapjai</h1>
+<h2>Programozás alapjai</h2>
+<h3>Programozás alapjai</h3>
+<h4>Programozás alapjai</h4>
+<h5>Programozás alapjai</h5>
+<h6>Programozás alapjai</h6>
+<hr>
+
+<!-- pre = előre formázott szöveg, a szöveg úgy fog megjelenni a weboldalon ahogy begépeltük-->
+<pre>
+    mt_srand((double)microtime()*1000000);
+    $length=mt_rand(5,8);
+    $down=97;
+    $up=122;
+    $i=0;
+    $password="";
+</pre>
+
+<hr>
+<!--A <blockquote> címke egy másik forrásból idézett szakaszt határoz meg,
+     a szöveg beljebb kezdődik az oldalon-->
+<blockquote cite="http://www.php.net">
+    A PHP nyelvet eredetileg Rasmus Lerdorf alkotta meg 1994-ben,
+    de a ma létező egyetlen (és hivatalos specifikáció híján
+    de facto szabvánnyá vált) PHP implementációt már a PHP
+    Group tartja karban és fejleszti. A PHP a saját licence
+    alatt kerül kiadásra, és a Free Software Foundation szabad
+    szoftverként tartja számon
+</blockquote>
+
+<!-- b, strong = félkövér, kiemelt szöveg-->
+<b>Programozás alapjai</b><br>
+<strong>Programozás alapjai</strong><br>
+
+<!-- em, i = dőlt betűs szöveg-->
+<em>Programozás alapjai</em><br>
+<i>Programozás alapjai</i><br><br>
+
+
+<!-- small,mark-->
+<small>kisebb szöveg</small> <br>
+<mark>kiemelt szöveg</mark>
+<br><br>
+
+<!-- del = áthúzott szöveg-->
+<del>Error</del><br>
+
+<!-- ins = kiemelt szöveg, A <ins>címke egy dokumentumba beszúrt szöveget határoz meg. 
+    A böngészők általában aláhúzzák a beszúrt szöveget.-->
+<ins>TJ</ins><br><br>
+
+<!-- sub = alsó index, sup = felső index-->
+H<sub>2</sub>O <br> 
+E=mc<sup>2</sup><br><br>
+
+<!-- abbr = a címke egy rövidítést vagy mozaikszót határoz meg-->
+<abbr title="Hypertext Preprocessor">PHP</abbr> program.
+
+<!-- A <span>címke egy szövegközi tároló, amelyet a szöveg vagy a dokumentum egy részének megjelölésére használnak.-->
+<span class="blue">by <span class="red">Beatrix</span></span>
+<span class="green">IT</span>
+
+
+</body>
+</html>

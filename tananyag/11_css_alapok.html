@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="11_css_alapok.css">
+    <title>CSS alapok I.</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <!--
+
+        A CSS funkciója, hogy a honlapnak a tartalmi elemeit meghatározza, nem egy programozási, hanem egy úgynevezett 
+        stílusnyelv, amelynek a feladata, hogy a html-ben megadott tartalmi elemeknek a kinézetét határozza meg. 
+
+        https://www.w3schools.com/css/css_syntax.asp
+
+        Tutorial: https://www.youtube.com/watch?v=eqR_RVRDwvQ
+
+        3 módja van a HTML dokumentum formázásának:
+        - 
+        - head részben
+        - külön fájlban
+    -->
+
+    Hello World!
+    <br>
+
+
+    <!-- Ez egy komment vagy megjegyzés: akkor használjuk, ha valamit nem szeretnénk, hogy megjelenjen a weboldalon -->
+Szegedi SZC Tóth János Szakképző és Garabonciás Kollégium
+<br>    <!--br = sortörés -->
+Mórahalom
+
+<!-- p = új bekezdés
+A bekezdés mindig új sorban kezdődik, és általában egy szövegblokk.
+-->
+<p>Ez egy bekezdés</p>
+
+<hr>        <!-- hr = vízszintes vonalat húz -->
+
+<!-- hx = címsort határoz meg. 
+    x = 1,2,3,4,5,6.
+h1 = legnagyobb betű méret
+h6= legkisebb betű méret 
+-->
+<h1>Programozás alapjai</h1>
+<h2>Programozás alapjai</h2>
+<h3>Programozás alapjai</h3>
+<h4>Programozás alapjai</h4>
+<h5>Programozás alapjai</h5>
+<h6>Programozás alapjai</h6>
+<hr>
+
+<!-- pre = előre formázott szöveg, a szöveg úgy fog megjelenni a weboldalon ahogy begépeltük-->
+<pre>
+    mt_srand((double)microtime()*1000000);
+    $length=mt_rand(5,8);
+    $down=97;
+    $up=122;
+    $i=0;
+    $password="";
+</pre>
+
+<hr>
+<!--A <blockquote> címke egy másik forrásból idézett szakaszt határoz meg, a szöveg beljebb kezdődik az oldalon-->
+<blockquote cite="http://www.php.net">
+    A PHP nyelvet eredetileg Rasmus Lerdorf alkotta meg 1994-ben,
+    de a ma létező egyetlen (és hivatalos specifikáció híján
+    de facto szabvánnyá vált) PHP implementációt már a PHP
+    Group tartja karban és fejleszti. A PHP a saját licence
+    alatt kerül kiadásra, és a Free Software Foundation szabad
+    szoftverként tartja számon
+</blockquote>
+
+<!-- b, strong = félkövér, kiemelt szöveg-->
+<b>Programozás alapjai</b><br>
+<strong>Programozás alapjai</strong><br>
+
+<!-- em, i = dőlt betűs szöveg-->
+<em>Programozás alapjai</em><br>
+<i>Programozás alapjai</i><br><br>
+
+
+<!-- small,mark-->
+<small>kisebb szöveg</small> <br>
+<mark>kiemelt szöveg</mark>
+<br><br>
+
+<!-- del = áthúzott szöveg-->
+<del>Error</del><br>
+
+<!-- ins = kiemelt szöveg, A <ins>címke egy dokumentumba beszúrt szöveget határoz meg. 
+    A böngészők általában aláhúzzák a beszúrt szöveget.-->
+<ins>TJ</ins><br><br>
+
+<!-- sub = alsó index, sup = felső index-->
+H<sub>2</sub>O <br> 
+E=mc<sup>2</sup><br><br>
+
+<!-- abbr = a címke egy rövidítést vagy mozaikszót határoz meg-->
+<abbr title="Hypertext Preprocessor">PHP</abbr> program.
+
+<!-- A <span>címke egy szövegközi tároló, amelyet a szöveg vagy a dokumentum egy részének megjelölésére használnak.-->
+<span class="blue">by <span class="red">Beatrix</span></span>
+<span class="green">IT</span>
+
+</body>
+</html>
