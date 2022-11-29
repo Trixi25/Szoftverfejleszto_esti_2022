@@ -1,0 +1,41 @@
+body {
+    background-image: url("viztukor.png");
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2 {
+    font-variant-caps: small-caps;
+    color: darkblue;
+}
+
+img, .kepkeret {
+    width: 300px;
+    float: right;
+}
+
+.kepkeret{
+    border: 2px solid darkblue;
+    font-style: italic;
+    text-align: center;
+    background-color: white;
+    border-radius: 10%;
+    overflow: hidden;
+    box-shadow: 10px 10px 10px grey;
+}
+
+#leiras{
+    padding:35px;
+    background: rgba(255, 255, 255, 0.5);
+    margin:200px;
+    border-radius: 10% 0 10% 0;
+    
+}
+
+a{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+li {
+    margin: 25 px;
+}
