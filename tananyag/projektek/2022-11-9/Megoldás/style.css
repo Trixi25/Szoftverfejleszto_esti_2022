@@ -1,0 +1,62 @@
+body{
+    background-image: url("bg.png");
+    color: #00008b;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main{
+    background-color: #d8dcdf;
+    padding: 5px;
+    max-width: 930px;
+    margin: 0 auto;
+}
+
+.bevezeto{
+    font-style: italic;
+}
+/*
+header p{
+    font-style: italic;
+}
+*/
+
+p{
+    text-align: justify;
+}
+section{
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.racs{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+img {
+    width: 80%;
+    align-self: center;
+}
+
+a,h1, h2{
+    color: #dc143c;
+}
+
+h2{
+    font-size: 17pt;
+}
+
+hr{
+    width: 80%;
+}
+
+@media only screen and(max-width:500px){
+    .racs{
+        display: flex;
+        flex-direction: column;
+    }
+    a{
+        word-wrap: break-word;
+    }
+}
